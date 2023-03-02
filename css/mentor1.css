@@ -1,0 +1,104 @@
+*{
+    font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+box-sizing: border-box;
+}
+:root{
+    --maincolor:hsl(0, 0%, 100%);
+}
+body{
+    background-color:  hsl(233, 47%, 7%)
+}
+.section {
+    
+    display: flex;
+    width: 800px;
+    margin: 100px auto;
+    border-radius: 5px;
+    background: hsl(244, 38%, 16%);
+    overflow: hidden;
+    flex-wrap: wrap;
+
+}
+@media(max-width:375px){
+    .section{flex-direction: column;
+        width: 300px;
+        
+    }
+}
+.section .right {
+    padding: 20px 20px;
+    background-color: hsl(244, 38%, 16%);
+    flex-basis: 50%;
+}
+@media(max-width:375px) {
+    .right{
+        order: 2;
+        height: 50%;
+        text-align: center;
+    }
+}
+.section .right h3 {
+color: white;
+font-size: 25px;
+font-weight: bold;
+}
+
+.section .right h3 span {
+    color: hsl(277, 64%, 61%);
+}
+
+
+
+.section .right .one {
+    color: #dacaca;
+    margin-bottom: 24px
+}
+.nember{
+    
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    margin-top: 82px;
+    padding-left: 10px;
+    padding-right: 39px
+
+}
+@media(max-width:375px){
+    .nember{display: block;
+        
+    }
+}
+.nember h5 {
+    margin: 0;
+    font-size: 20px;
+}
+.nember p {
+    margin: 0;
+    color: #dacaca;
+}
+.left {
+    position: relative;
+    flex-basis: 50%;
+}
+.left img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+@media(max-width:375px) {
+    .left {
+        order: 1;
+        height: 50%;
+    }
+}
+.left::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: hsl(277, 64%, 61%, 50%) ;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
